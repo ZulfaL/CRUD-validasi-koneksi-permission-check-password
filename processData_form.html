@@ -1,0 +1,53 @@
+<html>
+	<head><title>Form HTML</title></head>
+	<body>
+		<h1>Register</h1>
+		<fieldset>
+		<legend><h3>Person Details</h3></legend>
+		<form name = "myForm" action="processData.php" method="GET">
+			<div style="padding-bottom:8px;">
+				<label for="surname">Surname</label>
+				<input type = "text" name = "surname" size = "31"/>
+			</div>
+			<div style="padding-bottom:8px;">
+				<label for="email">Email Address</label>
+				<input type = "text" name = "email" size = "31"/>
+			</div>
+			<div style="  padding-bottom:8px;">
+				<label for="pass">Password</label>
+				<input type = "password" name = "pass" size = "31"/>
+			</div>
+			<div style="  padding-bottom:8px;">
+				<label for="alamat">Street Address</label>
+				<textarea type = "text" name = "alamat" rows = "3" cols = "22"></textarea>
+			</div>
+			<div style="  padding-bottom:8px;">
+				<label for="state">State</label>
+				<select name="state">
+					<option value = "-1" selected>[choose your state]</option>
+					<option value = "1" >Indonesia</option>
+					<option value = "2" >Singapura</option>
+					<option value = "3" >Malaysia</option>
+					<option value = "4" >Thailand</option>
+				</select>
+			</div>
+			<div style="  padding-bottom:8px;">
+				<label for="gender">Gender</label>
+				<input type = "radio" name = "gender" value = "male" /> Male
+				<input type = "radio" name = "gender" value = "female" /> Female
+			</div>
+			<div style="  padding-bottom:8px;">
+				<label for="vegetarian">Vegetarian ?</label>
+				<input type = "checkbox" name = "vegetarian"/>
+			</div>
+			<div style="  padding-bottom:8px;">
+				<label>&nbsp;</label>
+				<input type = "submit" name = "submit" value = "Submit"/>
+				<input type = "reset" name = "reset" value = "Reset"/>
+			</div>
+			
+			
+		</form>
+		</fieldset>
+	</body>
+</html>
